@@ -4,9 +4,15 @@ const express = require("express");
 const mongoose = require("mongoose");
 const workoutRoutes = require("./routes/workouts");
 const userRoutes = require("./routes/user");
+const cors = require('cors');
 
 // express app
 const app = express();
+
+// cors
+app.use(cors({
+  origin: "https://workout-tracker-frontend-zeta.vercel.app" 
+}));
 
 // middleware
 app.use(express.json());
