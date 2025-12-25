@@ -11,7 +11,7 @@ const app = express();
 
 // cors
 app.use(cors({
-  origin: "https://workout-tracker-frontend-zeta.vercel.app" 
+  origin: ["localhost:3000", "https://workout-tracker-frontend-zeta.vercel.app"] 
 }));
 
 // middleware
