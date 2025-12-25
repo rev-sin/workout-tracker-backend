@@ -10,9 +10,7 @@ const cors = require('cors');
 const app = express();
 
 // cors
-app.use(cors({
-  origin: ["localhost:3000", "https://workout-tracker-frontend-zeta.vercel.app"] 
-}));
+app.use(cors());
 
 // middleware
 app.use(express.json());
